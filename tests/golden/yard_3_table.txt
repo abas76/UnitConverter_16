@@ -1,0 +1,3 @@
+3 yard = 2.7 meter
+3 yard = 9 feet
+3 yard = 3 yard

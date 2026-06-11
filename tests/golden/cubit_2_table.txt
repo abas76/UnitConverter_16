@@ -1,0 +1,4 @@
+2 cubit = 0.9 meter
+2 cubit = 3 feet
+2 cubit = 1 yard
+2 cubit = 2 cubit
