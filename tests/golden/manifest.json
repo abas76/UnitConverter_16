@@ -1,0 +1,105 @@
+[
+  {
+    "id": "meter_2_5_table",
+    "description": "PRD normal output — meter:2.5 table",
+    "file": "meter_2_5_table.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "meter:2.5",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "feet_8_2_table",
+    "description": "PRD input — feet:8.2 table",
+    "file": "feet_8_2_table.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "feet:8.2",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "yard_3_table",
+    "description": "PRD input — yard:3 table",
+    "file": "yard_3_table.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "yard:3",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "meter_2_5_json",
+    "description": "FR-8 JSON output",
+    "file": "meter_2_5_json.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "meter:2.5",
+      "output_format": "json"
+    }
+  },
+  {
+    "id": "meter_2_5_csv",
+    "description": "FR-8 CSV output",
+    "file": "meter_2_5_csv.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "meter:2.5",
+      "output_format": "csv"
+    }
+  },
+  {
+    "id": "error_invalid_format",
+    "description": "PRD error — missing colon",
+    "file": "error_invalid_format.txt",
+    "exit_code": 1,
+    "kwargs": {
+      "raw_input": "meter2.5",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "error_invalid_number",
+    "description": "PRD error — invalid number",
+    "file": "error_invalid_number.txt",
+    "exit_code": 1,
+    "kwargs": {
+      "raw_input": "meter:abc",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "error_unknown_unit",
+    "description": "PRD error — unknown unit",
+    "file": "error_unknown_unit.txt",
+    "exit_code": 1,
+    "kwargs": {
+      "raw_input": "inch:5",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "error_negative_value",
+    "description": "PRD error — negative value",
+    "file": "error_negative_value.txt",
+    "exit_code": 1,
+    "kwargs": {
+      "raw_input": "meter:-1",
+      "output_format": "table"
+    }
+  },
+  {
+    "id": "cubit_2_table",
+    "description": "FR-7 dynamic unit — cubit:2 table",
+    "file": "cubit_2_table.txt",
+    "exit_code": 0,
+    "kwargs": {
+      "raw_input": "cubit:2",
+      "output_format": "table",
+      "unit_definitions": [
+        "1 cubit = 0.4572 meter"
+      ]
+    }
+  }
+]
